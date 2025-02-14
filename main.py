@@ -25,14 +25,16 @@ def main():
     while running:
         running = handle_events()
         screen.fill(config.BLACK) # Use color from config
-        pygame.draw.line(screen, config.FIREBRICK, (100,100),(100,500),5)
-        pygame.draw.line(screen, config.FIREBRICK, (98,500), (300,500), 5)
+        pygame.draw.line(screen, config.FIREBRICK, (100,100),(100,500),10)
+        pygame.draw.line(screen, config.FIREBRICK, (98,500), (300,500), 10)
 
-        pygame.draw.line(screen, config.LEMON_CHIFFON, (400,100), (400,500), 5)
-        pygame.draw.line(screen, config.LEMON_CHIFFON, (400,100), (550,100), 5)
-        pygame.draw.line(screen, config.LEMON_CHIFFON, (550,100), (550,500), 5)
-        pygame.draw.line(screen, config.LEMON_CHIFFON, (400,500), (550,500), 5)
-        pygame.draw.line(screen, config.LEMON_CHIFFON, (400,300), (550,300), 5)
+        pygame.draw.line(screen, config.LEMON_CHIFFON, (400,100), (400,500), 10)
+        pygame.draw.line(screen, config.LEMON_CHIFFON, (400,100), (550,100), 10)
+        #pygame.draw.line(screen, config.LEMON_CHIFFON, (550,100), (550,500), 10)
+        pygame.draw.line(screen, config.LEMON_CHIFFON, (550,100), (550,295), 10)
+        pygame.draw.line(screen, config.LEMON_CHIFFON, (550,305), (550,500), 10)
+        pygame.draw.line(screen, config.LEMON_CHIFFON, (400,500), (550,500), 10)
+        pygame.draw.line(screen, config.LEMON_CHIFFON, (400,300), (547,300), 10)
 
         pygame.display.flip()
         
