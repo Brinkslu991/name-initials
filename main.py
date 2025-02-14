@@ -24,9 +24,20 @@ def main():
     running = True
     while running:
         running = handle_events()
-        screen.fill(config.WHITE) # Use color from config
+        screen.fill(config.BLACK) # Use color from config
+        pygame.draw.line(screen, config.FIREBRICK, (100,100),(100,500),5)
+        pygame.draw.line(screen, config.FIREBRICK, (98,500), (300,500), 5)
+
+        pygame.draw.line(screen, config.LEMON_CHIFFON, (400,100), (400,500), 5)
+        pygame.draw.line(screen, config.LEMON_CHIFFON, (400,100), (550,100), 5)
+        pygame.draw.line(screen, config.LEMON_CHIFFON, (550,100), (550,500), 5)
+        pygame.draw.line(screen, config.LEMON_CHIFFON, (400,500), (550,500), 5)
+        pygame.draw.line(screen, config.LEMON_CHIFFON, (400,300), (550,300), 5)
+
         pygame.display.flip()
         
+        
+
         # Limit the frame rate to the specified frames per second (FPS)
         clock.tick(config.FPS) # Use the clock to control the frame rate
 
